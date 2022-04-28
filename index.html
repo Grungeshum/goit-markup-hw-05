@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -27,7 +28,7 @@
             </a>
             <ul class="site-nav list">
               <li class="nav-item">
-                <a href="index.html" class="nav-link">Студия</a>
+                <a href="index.html" class="nav-link studio-page">Студия</a>
               </li>
               <li class="nav-item">
                 <a href="./portfolio.html" class="nav-link">Портфолио</a>
@@ -69,7 +70,7 @@
           <br />
           для вашего бизнеса
         </h1>
-        <a href="#" class="button primary">Заказать услугу</a>
+        <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
       </section>
       <!-- Наши премущества -->
       <section class="section feature">
@@ -114,6 +115,7 @@
                 alt="процесс написания кода согласно блок-схемы"
                 width="370"
               />
+              <span class="engage-item-text">Десктопные приложения</span>
             </li>
             <li class="engage-item">
               <img
@@ -121,6 +123,7 @@
                 alt="просмотр расположения секций мобильной версии сайта на мониторе ноутбука"
                 width="370"
               />
+              <span class="engage-item-text">Мобильные приложения</span>
             </li>
             <li class="engage-item">
               <img
@@ -128,6 +131,7 @@
                 alt="на планшете выбирает цвет из палитры"
                 width="370"
               />
+              <span class="engage-item-text">Дизайнерские решения</span>
             </li>
           </ul>
         </div>
@@ -375,7 +379,7 @@
         </div>
 
         <div class="footer-soc">
-          <span class="footer-soc-title">присоединяйтесь</span>
+          <span class="footer-titles">присоединяйтесь</span>
           <ul class="footer-soc-list list">
             <li class="footer-soc-item">
               <a href="" class="footer-soc-link">
@@ -409,6 +413,16 @@
         </div>
       </div>
     </footer>
-     <script src="./js/modal.js"></script>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-modal" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/symbol-defs.svg#iconVector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
